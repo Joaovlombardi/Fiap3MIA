@@ -5,14 +5,11 @@ function qntLivros() {
     return livros
 }
 
-const livroNormal = 22
-const livropromocao = 15
-
-function calcpromocao(qntLivros = 0) {
+function calcpromocao(qntLivros) {
     if (qntLivros >= 7) {
-        return qntLivros * livropromocao
+        return qntLivros * 15
     } else {
-        return qntLivros * livroNormal
+        return qntLivros * 22
     }
 }
 
