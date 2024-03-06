@@ -17,7 +17,59 @@ function check(parametro) {
 
 function main() {
     let valor = infoVelocidade();
-    check(valor);
+    check(infoVelocidade());
 }
 
 main();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
