@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Aplicativo de Transporte
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-item>
+      <ion-input [(ngModel)]="km"  label="Quilimetros rodados:  " placeholder="Quilometros"></ion-input>
+    </ion-item>
+
+    <ion-radio-group [(ngModel)]="modalidade">
+      <ion-item>
+        <ion-radio value="normal">Normal</ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="superior">Superior</ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="vip">Vip</ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <ion-button expand="block" (click)="calcular()"> Calcular valor</ion-button>
+
+</ion-content>
