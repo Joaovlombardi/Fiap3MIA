@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      AC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input [(ngModel)]="nota1" label="Coloque a primeira nota:" labelPlacement="floating" placeholder="Primeira nota"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="nota2" label="Coloque a segunda nota:" labelPlacement="floating" placeholder="Segunda nota"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="nota3" label="Coloque a terceira nota:" labelPlacement="floating" placeholder="Terceira nota"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="nota4" label="Coloque a quarta nota:" labelPlacement="floating" placeholder="Quarta nota"></ion-input>
+  </ion-item>
+
+  <ion-button  (click)="calcMedia()" expand="block">Média</ion-button>
+
+  <ion-label>{{media}}</ion-label>
+  <br>
+    <ion-label>{{mensagem}}</ion-label>
+  <br> 
+</ion-content>
