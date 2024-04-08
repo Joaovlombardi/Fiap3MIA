@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calcular Gasto de Combustível
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-radio-group [(ngModel)]="combustivel">
+    <ion-item>
+      <ion-radio value="etanol">ETANOL</ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio value="gasolina">GASOLINA</ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio value="diesel">DIESEL</ion-radio>
+    </ion-item>
+  </ion-radio-group>
+
+  <br>
+
+  <ion-item>
+    <ion-input [(ngModel)]="ppl" label="Preço por litro:" placeholder="Insira o preço"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input [(ngModel)]="km"  label="Quilometragem rodada:" placeholder="Insira a quilometragem"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="calcular()" expand="block">Fazer calculo</ion-button>
+
+</ion-content>
