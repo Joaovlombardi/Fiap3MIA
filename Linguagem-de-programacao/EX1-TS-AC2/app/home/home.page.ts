@@ -23,10 +23,10 @@ export class HomePage {
     if(this.modalidade == "normal"){
       this.res = parseFloat(this.km)* 2.5 + 5;
     }
-    else if(this.modalidade = "superior"){
+    else if(this.modalidade == "superior"){
       this.res = parseFloat(this.km)* 3.5 + 7,5;
     }
-    else if(this.modalidade = "vip"){
+    else if(this.modalidade == "vip"){
       this.res = parseFloat(this.km)* 5.5 + 10;
     }
 
