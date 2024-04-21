@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      App Adivinha Animal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Mentalize 1 dos 8 animais destacados:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      CACHORRO / COELHO / LOBO-MARINHO / TARTARUGA-MARINHA / GOLFINHO / ELEFANTE / LONTRA / COBRA
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-radio-group [(ngModel)]="pergunta1">
+    <ion-item>     
+      <ion-title>O animal tem pelo?</ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-radio value="sim">SIM</ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-radio value="nao">NÃO</ion-radio>
+    </ion-item>
+  </ion-radio-group>
+
+  <br>
+
+  <ion-radio-group [(ngModel)]="pergunta2">
+    <ion-item>     
+      <ion-title>O animal é terrestre?</ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-radio value="sim">SIM</ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-radio value="nao">NÃO</ion-radio>
+    </ion-item>
+  </ion-radio-group>
+
+  <br>
+
+  <ion-radio-group [(ngModel)]="pergunta3">
+    <ion-item>     
+      <ion-title>O animal é um mamífero?</ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-radio value="sim">SIM</ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-radio value="nao">NÃO</ion-radio>
+    </ion-item>
+  </ion-radio-group>
+
+  <ion-button expand="block" (click)="adivinhar()"> Adivinhar Animal </ion-button>
+
+</ion-content>
