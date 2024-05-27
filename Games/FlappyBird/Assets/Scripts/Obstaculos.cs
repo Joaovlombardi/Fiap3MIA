@@ -5,9 +5,21 @@ using UnityEngine;
 public class Obstaculos : MonoBehaviour
 {
     [SerializeField]   
-    private float velocidade = 0.6f;   
-
+    private float velocidade = 0.6f;
     // Update is called once per frame
+
+    [SerializeField]
+    private float variacaoPosicaoY;
+    void Start()
+    {
+        
+    }
+
+    private void Awake()
+    {
+        this.transform.Translate(Vector3.up * Random.Range(-variacaoPosicaoY, variacaoPosicaoY));
+    }
+
     void Update()
     {
         this.transform.Translate(Vector3.left * velocidade * Time.deltaTime);

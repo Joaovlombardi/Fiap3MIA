@@ -11,8 +11,8 @@ public class GeradorObstaculos : MonoBehaviour
     // Quando criar? Tempo
 
     [SerializeField]
-    private float tempoParaGerar = 3;
-
+    private float tempoParaGerar;
+    private float cronometroDoJogo;
     private float cronometro;
 
     [SerializeField]
@@ -21,10 +21,15 @@ public class GeradorObstaculos : MonoBehaviour
     private void Awake()
     {
         this.cronometro = this.tempoParaGerar;
+        
+  
     }
 
     void Update()
     {
+        this.cronometroDoJogo = Time.time;
+        Debug.Log(cronometroDoJogo);
+
         this.cronometro -= Time.deltaTime;  
         if(this.cronometro < 0)
         {
