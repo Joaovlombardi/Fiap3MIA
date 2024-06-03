@@ -27,9 +27,6 @@ public class GeradorObstaculos : MonoBehaviour
 
     void Update()
     {
-        this.cronometroDoJogo = Time.time;
-        Debug.Log(cronometroDoJogo);
-
         this.cronometro -= Time.deltaTime;  
         if(this.cronometro < 0)
         {

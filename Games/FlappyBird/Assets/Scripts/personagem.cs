@@ -13,7 +13,7 @@ public class personagem : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
@@ -21,7 +21,7 @@ public class personagem : MonoBehaviour
         }
     }
 
-    void Impulsionar()
+     private void Impulsionar()
     {
         this.fisica.AddForce(Vector2.up * velocidade, ForceMode2D.Impulse);
     }
