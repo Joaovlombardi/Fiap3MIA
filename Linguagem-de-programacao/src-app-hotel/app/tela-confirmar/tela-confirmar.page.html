@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tela-confirmar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Total do valor da hospedagem: {{valorPagar}}</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label><ion-label>Valor da Diária: {{valorDiaria}}</ion-label></ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Quantidade de Dias: {{qntDias}}</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-button (click)="confirmar()" expand="block">CONFIRMAR</ion-button>
+  <ion-button expand="block" routerLink="/">VOLTAR</ion-button>
+
+</ion-content>

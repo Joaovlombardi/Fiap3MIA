@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tela-mensagem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <p>
+      SUA RESERVA ESTÁ AGENDADA. AGUARDANDO O PAGAMENTO DE {{valorPagar | currency:"BRL"}} PARA CONFIRMAR SUA ESTADIA CONOSCO!
+    </p>
+  </ion-card>
+  <ion-button expand="block" routerLink="/">Voltar Início</ion-button>
+</ion-content>

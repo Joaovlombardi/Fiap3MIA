@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      App Diária Hotel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input [(ngModel)]="valorDiaria" label="Valor da Diária" placeholder="Insira o valor"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-range aria-label="Range with pin" [pin]="true" [pinFormatter]="pinFormatter" [min]="0" [max]="30" [(ngModel)]="qntDias"></ion-range>
+  </ion-item>
+
+  <ion-button (click)="telaValor()" expand="block">Total a pagar</ion-button>
+
+</ion-content>
