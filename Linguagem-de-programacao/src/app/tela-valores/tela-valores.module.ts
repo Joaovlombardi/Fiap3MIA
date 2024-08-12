@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TelaFrutasPageRoutingModule } from './tela-frutas-routing.module';
+import { TelaValoresPageRoutingModule } from './tela-valores-routing.module';
 
-import { TelaFrutasPage } from './tela-frutas.page';
+import { TelaValoresPage } from './tela-valores.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TelaFrutasPageRoutingModule
+    TelaValoresPageRoutingModule
   ],
-  declarations: [TelaFrutasPage]
+  declarations: [TelaValoresPage]
 })
-export class TelaFrutasPageModule {}
+export class TelaValoresPageModule {}

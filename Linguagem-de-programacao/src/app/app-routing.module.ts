@@ -12,8 +12,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'tela-frutas/:media/:plantio',
-    loadChildren: () => import('./tela-frutas/tela-frutas.module').then( m => m.TelaFrutasPageModule)
+    path: 'tela-valores',
+    loadChildren: () => import('./tela-valores/tela-valores.module').then( m => m.TelaValoresPageModule)
   },
 ];
 
