@@ -16,15 +16,21 @@ export class HomePage {
   prestacao = 0
   taxa = 0
   meses = 0
-  valorPagar = 0
+  porcentagem = 0;
 
   constructor(public router : Router) {}
 
   calcValor(){
-    this.valorPagar = this.prestacao * (1 + this.taxa) ^ this.meses
+
+    let i = 0;
+
+    while(i < this.meses){
+      this.prestacao = ((this.prestacao / 100) * this.taxa) + this.prestacao
+      i++
+    }
+
     this.router.navigateByUrl
-    (`/tela-valores/${this.valorPagar}`)
+    (`/tela-valores/${this.prestacao}`)
 
   }
-
 }

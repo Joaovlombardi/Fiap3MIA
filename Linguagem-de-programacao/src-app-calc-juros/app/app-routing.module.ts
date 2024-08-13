@@ -12,7 +12,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'tela-valores',
+    path: 'tela-valores/:prestacao',
     loadChildren: () => import('./tela-valores/tela-valores.module').then( m => m.TelaValoresPageModule)
   },
 ];

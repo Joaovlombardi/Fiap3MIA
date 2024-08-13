@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tela-valores',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TelaValoresPage implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRoute : ActivatedRoute) { }
+
+  prestacao: any;
 
   ngOnInit() {
+    this.prestacao = this.activatedRoute.snapshot.paramMap.get('prestacao')
   }
 
 }
