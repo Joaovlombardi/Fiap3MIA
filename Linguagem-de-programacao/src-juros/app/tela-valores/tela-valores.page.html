@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tela-valores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card class="cardValor">
+    <ion-label class="valorJuros">
+      {{prestacao | currency: 'BRL'}}
+    </ion-label>
+  </ion-card>
+
+  <ion-button class="button" expand="block" routerLink="/">Voltar Início</ion-button>
+
+</ion-content>

@@ -16,7 +16,6 @@ export class HomePage {
   prestacao = 0
   taxa = 0
   meses = 0
-  porcentagem = 0;
 
   constructor(public router : Router) {}
 
@@ -32,5 +31,6 @@ export class HomePage {
     this.router.navigateByUrl
     (`/tela-valores/${this.prestacao}`)
 
+    this.prestacao = 0;
   }
 }

@@ -1,23 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title >
+      APP CÁLCULO DE JUROS 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="as" [fullscreen]="true">
 
   <br>
-  <ion-item>
-    <ion-input type="Number" label="Digite o valor da prestação:" placeholder="Insira o valor" [(ngModel)]="prestacao" ></ion-input>
+  <ion-item class="range">
+    <ion-input type="number" label="Digite o valor da prestação:" [(ngModel)]="prestacao" ></ion-input>
   </ion-item>
 
-  <ion-item>
+  <ion-item class="range">
     <ion-range labelPlacement="start" label="Taxa de juros:" [pin]="true" [min]="0" [max]="12" [(ngModel)]="taxa" ></ion-range>
   </ion-item>
 
-  <ion-item>
+  <ion-item class="range">
     <ion-range labelPlacement="start"  label="Meses em atraso:" [pin]="true" [min]="0" [max]="12" [(ngModel)]="meses" ></ion-range>
   </ion-item>
 
