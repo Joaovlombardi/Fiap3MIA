@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tela-criptografia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-label>Mensagem Nome Criptografado</ion-label>
+    <ion-textarea [(ngModel)]="nomeCriptografado" readonly></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mensagem Email Criptografado</ion-label>
+    <ion-textarea [(ngModel)]="emailCriptografado" readonly></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mensagem Nota Criptografado</ion-label>
+    <ion-textarea [(ngModel)]="notaCriptografado" readonly></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Chave Secreta</ion-label>
+    <ion-input [(ngModel)]="secretKey" type="text"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="descripografar()">Descriptografar</ion-button>
+
+  <ion-item>
+    <ion-label>Mensagem Nome Descriptografada</ion-label>
+    <ion-label>{{nome}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mensagem email Descriptografada</ion-label>
+    <ion-label>{{email}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mensagem Nota Descriptografada</ion-label>
+    <ion-label>{{nota}}</ion-label>
+  </ion-item>
+
+</ion-content>
