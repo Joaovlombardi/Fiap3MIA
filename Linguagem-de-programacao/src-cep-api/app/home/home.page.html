@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      APP CEP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-input [(ngModel)]="cep" type="text" label="Digite o CEP" labelPlacement="floating" maxlength="8"></ion-input>
+  </ion-item>
+
+  <ion-card>
+    <ion-item><p>Logradouro: {{ logradouro }}</p></ion-item>
+    <ion-item><p>Bairro: {{ bairro }}</p></ion-item>
+    <ion-item><p>Cidade: {{ localidade }}</p></ion-item>
+    <ion-item><p>Estado: {{ uf }}</p></ion-item>
+  </ion-card>
+
+  <ion-button expand="block" class="btn1" (click)="buscarDados()">Buscar Dados</ion-button>
+
+  <ion-item>
+    <ion-input [(ngModel)]="uf2" type="text" label="Digite a UF" labelPlacement="floating"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="localidade2" type="text" label="Digite a Cidade" labelPlacement="floating"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="logradouro2" type="text" label="Digite a Rua" labelPlacement="floating"></ion-input>
+  </ion-item>
+  <ion-button expand="block" class="btn1" (click)="buscarCep()">Buscar CEP</ion-button>
+
+<ion-card *ngFor="let dado of lista">
+  <ion-card-header>
+    <ion-card-title>CEP: {{dado.cep}}</ion-card-title>
+    <ion-card-subtitle>Logradouro: {{dado.logradouro}}</ion-card-subtitle>
+    <ion-card-subtitle>Bairro: {{dado.bairro}}</ion-card-subtitle>
+    <ion-card-subtitle>Cidade: {{dado.localidade}}</ion-card-subtitle>
+    <ion-card-subtitle>Estado: {{dado.uf}}</ion-card-subtitle>
+  </ion-card-header>
+</ion-card>
+
+
