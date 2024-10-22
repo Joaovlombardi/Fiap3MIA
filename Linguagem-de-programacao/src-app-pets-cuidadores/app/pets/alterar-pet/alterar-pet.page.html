@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Alterar Pet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <h1 class="ion-text-center">ALTERAR PET</h1>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input [(ngModel)]="pet.nome"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Especie</ion-label>
+    <ion-input [(ngModel)]="pet.especie"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Raça</ion-label>
+    <ion-input [(ngModel)]="pet.raca"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Idade</ion-label>
+    <ion-input [(ngModel)]="pet.idade" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Observações</ion-label>
+    <ion-input [(ngModel)]="pet.obs"></ion-input>
+  </ion-item>
+
+  <br>
+  <ion-button expand="block" (click)="salvar()">SALVAR</ion-button>
+  <ion-button expand="block" fill="outline" routerLink="/">VOLTAR</ion-button>
+
+</ion-content>

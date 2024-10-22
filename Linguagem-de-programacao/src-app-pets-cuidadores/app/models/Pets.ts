@@ -2,7 +2,7 @@ export class Pets {
   id = ""
   nome =  ''
   especie = ''
-  raça = ''
+  raca = ''
   idade = 0
   obs = ''
 }

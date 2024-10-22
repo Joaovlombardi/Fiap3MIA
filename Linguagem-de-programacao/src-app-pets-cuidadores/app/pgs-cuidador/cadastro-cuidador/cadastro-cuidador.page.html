@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cadastro Cuidador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <h1 class="ion-text-center">CADASTRO CUIDADOR</h1>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input [(ngModel)]="cuidador.nome"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-input [(ngModel)]="cuidador.telefone" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Anos de Experiência</ion-label>
+    <ion-input [(ngModel)]="cuidador.exp" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Especialidades</ion-label>
+    <ion-input [(ngModel)]="cuidador.especialidades"></ion-input>
+  </ion-item>
+
+  <br>
+  <ion-button expand="block" (click)="salvar()">SALVAR</ion-button>
+  <ion-button expand="block" fill="outline" routerLink="/cuidador">VOLTAR</ion-button>
+
+</ion-content>

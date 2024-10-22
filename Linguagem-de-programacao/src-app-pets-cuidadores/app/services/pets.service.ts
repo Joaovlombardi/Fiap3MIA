@@ -17,12 +17,12 @@ export class PetsService {
     return this.afs.collection('pets').snapshotChanges();
   }
 
-  buscarPorNome(nome : string){
-    return this.afs.collection('pets').doc(nome).valueChanges();
+  buscarPorId(id : string){
+    return this.afs.collection('pets').doc(id).valueChanges();
   }
 
   alterar(pets : Pets){
-    return this.afs.collection('pets').doc(pets.nome).update({ ...pets})
+    return this.afs.collection('pets').doc(pets.id).update({ ...pets})
   }
 
   deletar(id : string) {
